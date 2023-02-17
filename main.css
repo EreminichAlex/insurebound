@@ -338,6 +338,7 @@ header {
 
 .companies {
     background: #FAFAFA;
+    padding-bottom: 20px;
 }
 .companies-container {
     width: 1050px;
@@ -366,7 +367,6 @@ header {
     background: linear-gradient(270deg, #D71489 -1.04%, #004788 100%);
     border-radius: 2px;
     margin-top: 86px;
-    margin-bottom: 20px;
 }
 
 .companies-form h3 {
@@ -416,4 +416,158 @@ header {
     text-align: center;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+}
+
+
+
+/* PRICING */
+
+
+.pricing {
+    min-height: 1116px;
+    background-color: #FAFAFA;
+}
+.pricing-container {
+    width: 1050px;
+    margin: 0 auto;
+    min-height: inherit;
+}
+.pricing-text {
+    padding-top: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing-text h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pricing-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0;
+}
+.pricing-options {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 32.5px;
+}
+
+.pricing-free, .pricing-premium {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 40px;
+    max-width: 306px;
+    min-height: 565px;
+    background: #FFFFFF;
+    border: 1px solid #23A6F0;
+    border-radius: 10px;
+}
+.pricing-free p, .pricing-premium p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+
+.pricing-free h3, .pricing-premium h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    text-transform: uppercase;
+}
+
+.pricing-standard {
+    padding: 70px 40px;
+    max-width: 307px;
+    min-height: 605px;
+    background: #252B42;
+    border: 1px solid #23A6F0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricing-standard p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+
+}
+
+.pricing-standard h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+    color: #23A6F0;
+}
+.price + img {
+    position: relative;
+    bottom: 17px;
+    left: 13px;
+}
+.per-month {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: #8EC2F2;
+}
+
+.pricing-list ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 40px;
+    gap: 15px;
+}
+
+
+
+
+/*         ------------      !   I MUST FINISH LIST MARKERS   !     ----------        */
+
+.pricing-list ul li {
+    list-style-type: none;
+    /* list-style-image: url(icons/check-green.svg); */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+} 
+.pricing-list ul li::marker {
+    content: url(icons/check-green.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
