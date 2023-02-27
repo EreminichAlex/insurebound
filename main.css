@@ -21,7 +21,7 @@ header {
     min-height: 789px;
 }
 .header-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -160,7 +160,7 @@ header {
 
 
 .header-bottom {
-    width: 1046px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -279,7 +279,7 @@ header {
     min-height: 872px;
 }
 .testimonials-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -341,12 +341,12 @@ header {
     padding-bottom: 20px;
 }
 .companies-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     min-height: 339px;
 }
 .companies-icon {
-    width: inherit;
+    max-width: inherit;
     height: 175px;
     margin: 0 auto;
     background-image: url(company-icons/company-icon1.svg), 
@@ -362,7 +362,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: inherit;
+    max-width: inherit;
     height: 124px;
     background: linear-gradient(270deg, #D71489 -1.04%, #004788 100%);
     border-radius: 2px;
@@ -429,7 +429,7 @@ header {
     padding-bottom: 46px;
 }
 .pricing-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     min-height: inherit;
 }
@@ -609,7 +609,7 @@ header {
     min-height: 1200px;
 }
 .contact-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -645,7 +645,7 @@ header {
 .contact-form {
     display: flex;
     justify-content: flex-end;
-    min-width: 877px;
+    max-width: 877px;
     min-height: 610px;
     background: #FFFFFF;
     margin: 0 auto;
@@ -764,7 +764,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -805,7 +805,7 @@ input[type=submit]:hover {
     min-height: 272px;
 }
 .footer-main-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -866,7 +866,7 @@ input[type=submit]:hover {
 
 
 .footer-bottom-container {
-    width: 1050px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -888,4 +888,84 @@ input[type=submit]:hover {
     transition-property: all;
     transition-duration: 0.3s;
     opacity: 70%;
+}
+
+
+
+
+/*       MEDIA     */
+
+
+@media (max-width: 1100px) {
+    header {
+        width: 100%;
+    }
+    .header-bottom {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 30px;
+    }
+    .header-container {
+        max-width: 700px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .features-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .testimonials-cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 30px;
+    }
+    .companies-icon {
+        background-position: 5% 0%, 45% 0%, 95% 0%, 5% 100%, 45% 100%, 95% 100%;
+    }
+    .companies-form {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+    .companies-form h3 {
+        margin-left: 0;
+    }
+    .companies-form form{
+        margin-top: 20px;
+    }
+    .companies-form form input[type=submit] {
+        margin-right: 0;
+    }
+    .contact-container {
+        padding: 0 30px;
+    }
+    .contact-form {
+        background-image: none;
+        width: inherit;
+        justify-content: center;
+    }
+    .form-content {
+        width: 100%;
+        margin: 0px;
+        padding: 40px 50px;
+    }
+    .footer-top-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+    .footer-main-container {
+        flex-wrap: wrap;
+        padding: 50px 20px;
+    }
+    .footer-bottom-container {
+        padding: 25px 20px;
+    }
+    .footer-main-list {
+        margin: 10px 0;
+    }
 }
