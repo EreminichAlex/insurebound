@@ -370,6 +370,7 @@ header {
     margin-top: 86px;
 }
 
+
 .companies-form h3 {
     margin: 0;
     margin-left: 50px;
@@ -511,6 +512,7 @@ header {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    color: #FFFFFF;
 }
 
 .pricing-standard p {
@@ -1012,6 +1014,9 @@ input[type=submit]:hover {
     header {
         background-image: none;
     }
+    main {
+        border-bottom: 3px solid #252B42;
+    }
     .header-container {
         background-color: #FFFFFF;
         width: 100%;
@@ -1056,6 +1061,7 @@ input[type=submit]:hover {
         background-size: cover;
         background-position: 45% 0%;
         padding: 80px 37px;
+        padding-bottom: 130px;
     }
     .heaeder-text-bottom {
         font-weight: 500;
@@ -1082,14 +1088,24 @@ input[type=submit]:hover {
     .header-cards-mobile {
         width: 100%;
         margin: 0;
-        margin-top: 196px;
+        margin-top: 80px;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         gap: 30px;
         padding: 0 40px;
     }
     .header-bottom-card1, .header-bottom-card2, .header-bottom-card3 {
-        width: 90%;
+        padding: 37px 40px 35px 40px;
+        position: static;
+    }
+
+    .header-bottom-card1 h3, .header-bottom-card2 h3, .header-bottom-card3 h3 {
+        margin: 10px 0;
+    }
+    .header-bottom-card1 p, .header-bottom-card2 p, .header-bottom-card3 p {
+        margin: 0;
+        margin-bottom: 10px;
     }
     .features-container {
         flex-direction: column;
@@ -1105,6 +1121,7 @@ input[type=submit]:hover {
     .testimonials-cards {
         gap: 30px;
         margin: 0;
+        padding-right: 0;
     }
     .testimonials-text {
         margin-top: 45px;
@@ -1125,17 +1142,20 @@ input[type=submit]:hover {
         background-size: 35%;
     }
     .companies-form {
-        width: 100%;
         height: 152px;
         padding: 0;
         padding: 30px 38.5px;
     }
     .companies-form form input[type="email"] {
         width: 100%;
-        padding: 15px 122px 15px 20px;
+        padding: 15px 60px 15px 20px;
     }
     .companies-form form input[type="submit"] {
         width: 100%;
+    }
+    .companies-form form input::placeholder {
+        text-overflow: ellipsis;
+
     }
     .companies-form h3 {
         font-weight: 700;
@@ -1161,6 +1181,8 @@ input[type=submit]:hover {
     .contact {
         margin-top: 80px;
         width: 100%;
+        background: none;
+        background: linear-gradient(to bottom, #252B42 70%, #FAFAFA 30%);
     }
     .contact-container {
         width: inherit;
@@ -1170,34 +1192,40 @@ input[type=submit]:hover {
         flex-direction: column;
         margin: 0;
         padding: 0 49px;
+        margin-bottom: 110px;
+        margin-top: 125px;
+
     }
+
 
     .form-content {
         width: 100%;
         min-height: 954px;
         padding: 0;
+        min-height: 0;
     }
     .form-content form input {
         min-width: 200px;
-        width: 100%;
+        width: calc(100% - 22px);
     }
     .contact-form {
         display: flex;
         flex-direction: column;
+        margin-bottom: 0;
     }
     .contact-form select {
         min-width: 220px;
-        width: 107%;
+        width: 100%;
     }
     .contact-container {
-        padding-top: 0;
-    }
-    .contact-top {
-        margin-top: 125px;
-        margin-bottom: 91px;
+        padding: 0;
     }
     .contact-text p {
         margin-top: 15px;
+    }
+    .contact-photo img {
+        width: 100%;
+        padding-top: 130px;
     }
     .contact-photo-top {
         width: 100%
@@ -1229,5 +1257,23 @@ input[type=submit]:hover {
     }
     .form-content form {
         padding: 0 50px;
+    }
+
+    .header-container {
+        padding: 23px 0;
+    }
+    .header-nav-mobile {
+        padding: 0 36px;
+    }
+    .form-content form input[type=submit] {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+
+
+    footer {
+        margin-top: 40px;
     }
 }
