@@ -909,8 +909,12 @@ input[type=submit]:hover {
 .form-head-mobile {
     display: none;
 }
-
-
+.foooter-links-mobile {
+    display: none;
+}
+.header-menu-mobile {
+    display: none;
+}
 
 
 
@@ -1008,12 +1012,53 @@ input[type=submit]:hover {
     .form-head-mobile {
         display: none;
     }
+    .foooter-links-mobile {
+        display: none;
+    }
+    .header-menu-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     header {
         background-image: none;
     }
+
+    .header-menu-mobile.menu-open {
+        display: flex;
+        flex-direction: column;
+        padding-top: 75px;
+        padding-bottom: 98px;
+    }
+
+    /* .header-menu-mobile {
+        display: flex;
+
+    } */
+    .header-menu-mobile ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .header-menu-mobile li {
+        margin-bottom: 30px;
+    }
+    .header-menu-mobile li:last-child {
+        margin: 0;
+    }
+    .header-menu-mobile a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+
+
     main {
         border-bottom: 3px solid #252B42;
     }
@@ -1093,7 +1138,7 @@ input[type=submit]:hover {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 0 40px;
+        padding: 0;
     }
     .header-bottom-card1, .header-bottom-card2, .header-bottom-card3 {
         padding: 37px 40px 35px 40px;
@@ -1121,6 +1166,8 @@ input[type=submit]:hover {
     .testimonials-cards {
         gap: 30px;
         margin: 0;
+        padding: 0;
+        padding-top: 60px;
         padding-right: 0;
     }
     .testimonials-text {
@@ -1263,7 +1310,7 @@ input[type=submit]:hover {
         padding: 23px 0;
     }
     .header-nav-mobile {
-        padding: 0 36px;
+        justify-content: space-around;
     }
     .form-content form input[type=submit] {
         width: 100%;
@@ -1275,5 +1322,45 @@ input[type=submit]:hover {
 
     footer {
         margin-top: 40px;
+    }
+    .footer-main {
+        margin-top: 95px;
+    }
+    .footer-main-container {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 239px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .footer-main-container div {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .footer-main-container div:last-child {
+        margin: 0;
+    } 
+    .footer-bottom-container {
+        max-width: 236px;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 55px;
+    }
+    .footer-bottom-links {
+        display: none;
+    } 
+    .foooter-links-mobile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-top-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        max-width: 239px;
     }
 }

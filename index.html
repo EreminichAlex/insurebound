@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <a name="Home"></a>
         <div class="header-container">
             <nav class="nav">
                 <div class="header-nav">
@@ -36,12 +37,20 @@
                     <ul class="mobile-icons">
                         <li><a href="#!"><img src="icons/search-icon.svg" alt="search"></a></li>
                         <li><a href="#!"><img src="icons/shopping-icon.svg" alt="shopping"></a></li>
-                        <li><a href="#!"><img src="icons/menu-list-icon.svg" alt="menu"></a></li>
+                        <li><a href="#!" id="open-menu"><img src="icons/menu-list-icon.svg" alt="menu"></a></li>
                     </ul>
                 </div>
 
             </div>
             </nav>
+            <div class="header-menu-mobile" id="nav">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
             <div class="header-text">
                 <div class="header-text-main"><h2>We Ensure A Best<br> Insurance Service</h2></div>
                 <div class="header-text-bottom"><p>We know how large objects will act, but things on a<br> 
@@ -98,6 +107,7 @@
             <div class="features-container">
                 <div class="features-card">
                     <img src="icons/features-icon1.svg" alt="features one">
+                    <a name="Product"></a>
                     <h3>Peace of Mind</h3>
                     <p>So it really behaves like neither. <br>
                         Now we have given up. </p>
@@ -165,6 +175,7 @@
             </div>
         </article>
         <article class="pricing">
+            <a name="Pricing"></a>
             <div class="pricing-container">
                 <div class="pricing-text">
                     <h2>Pricing</h2>
@@ -316,6 +327,7 @@
                 </div>
                 <div class="footer-main-list footer-contacts-list">
                     <p>Get In Touch</p>
+                    <a name="Contact"></a>
                     <ul>
                         <a href="tel: 4805550103"><li class="footer-contact-frst">(480) 555-0103</li></a>
                         <a href="#!"><li class="footer-contact-scnd">4517 Washington Ave.</li></a>
@@ -332,8 +344,15 @@
                     <a href="#!"><img src="social-icons/insta-icon.svg" alt="Instagram"></a>
                     <a href="#!"><img src="social-icons/twitter-icon.svg" alt="Twitter"></a>
                 </div>
+                <div class="foooter-links-mobile">
+                    <a href="#!"><img src="social-icons/facebook-icn-mobile.svg" alt="facebook"></a>
+                    <a href="#!"><img src="social-icons/insta-icn-mobile.svg" alt="Instagram"></a>
+                    <a href="#!"><img src="social-icons/twitter-icn-mobile.svg" alt="twitter"></a>
+                    <a href="#!"><img src="social-icons/youtube-icn-mobile.svg" alt="youtube"></a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
